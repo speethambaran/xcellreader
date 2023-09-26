@@ -9,7 +9,7 @@ with open('schema.sql') as f:
     connection.executescript(f.read())
 connection.close()
 load_dotenv()
-FILENAME = os.getenv('MYFILENAME')
+FILENAME = os.getenv('MYFILONAMA')
 # creating a Flask app
 app = Flask(__name__)
   
